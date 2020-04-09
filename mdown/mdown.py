@@ -129,8 +129,8 @@ class MarkdownXBlock(StudioEditableXBlockMixin, XBlock):
         html = loader.render_template('templates/main.html', context)
         frag = Fragment(html)
 
-        if "fenced-code-blocks" in self.extras:
-            frag.add_css_url(self.runtime.local_resource_url(self, 'public/css/pygments.css'))
+#         if "fenced-code-blocks" in self.extras:
+#             frag.add_css_url(self.runtime.local_resource_url(self, 'public/css/pygments.css'))
 
         return frag
 
